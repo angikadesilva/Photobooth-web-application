@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Filters</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="./tracking/tracking-min.js"></script>
+    <script src="./tracking/data/face-min.js"></script>
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <h1>Photobooth Application</h1>
+    </div>
+    
+    <div class="webcam-container">
+      <button id="timer-button" class="timer-button">⏱️</button>
+      <video id="video" width="700" height="525" preload autoplay loop muted></video>
+      <canvas id="canvas" width="700" height="525"></canvas>  
+      <div id="countdown" class="countdown-display"></div> <!-- Countdown display -->
+    </div>  
+    
+    <div class="buttons">
+      <button id="flower-crown"></button>
+      <button id="bunny-ears"></button>
+      <button id="face"></button>
+      <button id="harrypotter"></button>
+      <button id="spiderman"></button>
+      <button id="capture-btn" class="capture-button"></button> 
+      <button id="capture-no-filter" class="capture-no-filter-button">📷</button> <!-- Capture without filter button -->
+      <button id="ironman"></button>
+      <button id="pirate"></button>
+      <button id="dog"></button>
+      <button id="hearts"></button>
+      <button id="dogfilter"></button>
+    </div>
+
+    <!-- Navigation Button to Frame Page -->
+    <a href="frame.html" class="navigate-button">➡️</a>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

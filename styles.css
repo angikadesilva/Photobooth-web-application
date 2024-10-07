@@ -1,0 +1,73 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; /* Center content vertically */
+    height: 100vh;
+    margin: 0;
+    background-color: rgb(6, 6, 58);
+}
+
+#outer-canvas {
+    width: 500px; /* Adjusted width */
+    height: 700px; /* Adjusted height */
+    background-color: black; /* Canvas background */
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5); /* Shadow effect */
+    border-radius: 15px; /* Rounded corners */
+    position: relative;
+    margin-top: 30px; /* Space at the top */
+    margin-bottom: 20px; /* Space below canvas */
+}
+
+.circle-button {
+    padding: 10px;
+    background-color: white;
+    border: none;
+    border-radius: 50%; /* Circular buttons */
+    font-size: 24px; /* Size of emoji */
+    cursor: pointer;
+    margin: 10px;
+    display: inline-block;
+}
+
+#browse-btn, #delete-btn {
+    margin-top: 10px;
+}
+
+#browse-btn {
+    position: absolute;
+    bottom: 10px;
+    right: 450px;
+}
+
+#delete-btn {
+    position: absolute;
+    bottom: 10px;
+    right: 380px;
+}
+
+#download-btn {
+    position: absolute;
+    bottom: 10px;
+    right: 310px;
+}
+
+#mail-btn {
+    position: absolute;
+    bottom: 10px;
+    right: 240px; /* Adjusted to place next to the download button */
+}
+
+#back-btn {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-color: white;
+    border: none;
+    border-radius: 50%;
+    padding: 3px;
+    font-size: 20px;
+    cursor: pointer;
+    text-decoration: none; /* Remove underline from link */
+    color: black;
+}

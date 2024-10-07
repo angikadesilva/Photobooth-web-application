@@ -1,0 +1,163 @@
+body {
+    background-color: rgb(6, 6, 58);
+    font-family: 'Pacifico', sans-serif;
+    color: white;
+    text-align: center;
+}
+h1{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: xx-large;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px; /* Added margin to fill the gap left by h1 */
+    position: relative; /* Enable positioning for child elements */
+}
+
+.webcam-container {
+    position: relative;
+    width: 700px;
+    height: 525px;
+    margin: 0 auto;
+}
+
+video, canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 700px;
+    height: 525px;
+    border: 5px solid white;
+}
+
+canvas {
+    z-index: 10; /* Canvas on top of video */
+}
+
+.buttons {
+    margin-top: 40px; /* Increased margin for spacing */
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+button {
+    width: 80px; /* Circular button size */
+    height: 80px;
+    border-radius: 50%;
+    border: none;
+    background-size: cover;
+    background-position: center;
+    background-color: white; /* Set background to transparent for image buttons */
+    margin: 10px;
+    cursor: pointer;
+    outline: none;
+}
+
+.capture-button {
+    border: 3px solid white;
+    background-color: transparent; /* Keep transparent for capture button */
+}
+
+/* New Styles for Capture No Filter Button */
+.capture-no-filter-button {
+    font-size: 30px; /* Font size for the no filter button */
+    background-color: #ffcc00; /* Background color for the button */
+    border-radius: 50%;
+    border: 2px solid white;
+}
+
+/* Timer Button Styles */
+.timer-button {
+    position: absolute;
+    left: -100px; /* Adjust this value to position it relative to the canvas */
+    top: 50%; /* Center it vertically */
+    transform: translateY(-50%);
+    border: 3px solid white;
+    background-color: white;
+    font-size: 30px; /* Adjust size for the timer emoji */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Countdown Display */
+.countdown-display {
+    position: absolute;
+    left: 10px; /* Position it slightly to the right of the timer button */
+    top: 10px; /* Position it at the top of the video/canvas */
+    font-size: 24px; /* Font size for the countdown */
+    color: white; /* Color for countdown text */
+}
+
+/* Filter button backgrounds */
+#flower-crown {
+    background-image: url('flower-crown.png');
+}
+
+#bunny-ears {
+    background-image: url('bunny-ears.png');
+}
+
+#face {
+    background-image: url('face.png');
+}
+
+#harrypotter {
+    background-image: url('harrypotter.png');
+}
+
+#spiderman {
+    background-image: url('spiderman.png');
+}
+
+#ironman {
+    background-image: url('ironman.png');
+}
+
+#pirate {
+    background-image: url('pirate.png');
+}
+
+#dog {
+    background-image: url('dog.png');
+}
+
+#hearts {
+    background-image: url('hearts.png');
+}
+
+#dogfilter {
+    background-image: url('dogfilter.png');
+}
+
+/* Navigation Button Styles */
+.navigate-button {
+    position: absolute; /* Position it at the top right */
+    top: 20px; /* Space from the top */
+    right: 20px; /* Space from the right */
+    background-color: #ffffff; /* Button color */
+    border: none;
+    border-radius: 50%; /* Circular button */
+    font-size: 20px; /* Font size for emoji */
+    color: black; /* Text color */
+    padding: 5px;
+    cursor: pointer;
+    text-decoration: none; /* Remove underline */
+}
+
+/* Responsive Styles */
+@media (max-width: 800px) {
+    h1 {
+        font-size: 50px;
+    }
+}
+
+@media (max-width: 550px) {
+    h1 {
+        font-size: 30px;
+    }
+}
